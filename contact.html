@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesotho Hub — Contact Us</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+ 
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="business.html">Businesses</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+      <li><a href="tips.html">Tips</a></li>
+    </ul>
+  </nav>
+
+ 
+  <header>
+    <h1>Contact Us</h1>
+    
+
+     </header>
+
+  <main>
+    
+    <section class="contact-info">
+      <p>We’d love to hear from you! Reach out to us using the details below or send us a message through the form.</p>
+      <h2>Our Details</h2>
+      <address>
+        <p>Email: <a href="mailto:info@lesotohub.com">info@lesotohub.com</a></p>
+        <p>Phone: <a href="tel:+26623046083">+266 5734 5678</a></p>
+        <p>Address: Maseru, Lesotho</p>
+      </address>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form method="post" action="/submit-contact-form" aria-label="Contact form">
+        <div class="form-group">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required autocomplete="name" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required autocomplete="email" />
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" placeholder="Enter subject" required />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map">
+      <h2>Find Us</h2>
+      <iframe 
+        src="https://www.google.com/maps?q=Maseru,Lesotho&output=embed" 
+        width="100%" height="300" style="border:0;" 
+        allowfullscreen="" loading="lazy">
+      </iframe>
+    </section>
+  </main>
+
+ 
+  <footer>
+    <p>&copy; 2025 Lesotho Hub | Follow us on 
+      <a href="#">Facebook</a>, 
+      <a href="#">Instagram</a>, 
+      <a href="#">LinkedIn</a>
+    </p>
+  </footer>
+
+</body>
+</html>

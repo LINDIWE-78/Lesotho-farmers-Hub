@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesotho Hub — Businesses</title>
+  <meta name="description" content="Lesotho Hub showcasing local farmers' products including eggs, vegetables, fruits, livestock, and grains." />
+  <meta name="keywords" content="Lesotho, farmers, eggs, vegetables, fruits, livestock, maize, sorghum, wheat" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: ghostwhite;
+      color: #333;
+    }
+
+    nav {
+      background: darkseagreen;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a.active {
+      text-decoration: underline;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #e8f5e9;
+      position: relative;
+      z-index: 10;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+      color: #333;
+      visibility: visible;
+      display: block;
+      opacity: 1;
+    }
+
+    main.products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .product {
+      background: #fff;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .product h2 {
+      margin-top: 0;
+      font-size: 1.2em;
+    }
+
+    .product-images {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      padding-bottom: 5px;
+    }
+
+    .product-images img {
+      width: 150px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .product p {
+      font-weight: bold;
+    }
+
+    .product button {
+      background-color: darkseagreen;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 5px;
+    }
+
+    .product button:hover {
+      background-color: darkolivegreen;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: aquaspring;
+    }
+
+    @media (max-width: 600px) {
+      .product-images img {
+        width: 100px;
+        height: 70px;
+      }
+    }
+  </style>
+</head>
+<body>
+ 
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="business.html" class="active">Businesses</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="tips.html">Tips</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Our Farmers' Products</h1>
+  </header>
+
+  <main class="products-grid">
+  
+    <section class="product">
+      <h2>Egg Production</h2>
+      <div class="product-images">
+        <img src="eggs.jpeg" alt="Tray of fresh eggs" />
+      </div>
+      <p>Price: M75 per tray</p>
+      <button type="button">Contact Seller</button>
+    </section>
+
+  
+    <section class="product">
+      <h2>Fresh Vegetables</h2>
+      <div class="product-images">
+        <img src="vv.jpg" alt="Fresh assorted vegetables" />
+      </div>
+      <p>Price: From M20 per bundle</p>
+      <button type="button">Contact Seller</button>
+    </section>
+
+  
+    <section class="product">
+      <h2>Tomatoes</h2>
+      <div class="product-images">
+        <img src="tomato.jpg" alt="Fresh tomatoes" />
+      </div>
+      <p>Price: M85 per box</p>
+      <button type="button">Contact Seller</button>
+    </section>
+
+    <section class="product">
+      <h2>Maize</h2>
+      <div class="product-images">
+        <img src="maize.jpg" alt="Bag of maize" />
+      </div>
+      <p>Price: M350 per bag</p>
+      <button type="button">Contact Seller</button>
+    </section>
+
+  
+    <section class="product">
+      <h2>Sorghum</h2>
+      <div class="product-images">
+        <img src="soghum.jpg" alt="Sorghum grains" />
+      </div>
+      <p>Price: M700 per bag</p>
+      <button type="button">Contact Seller</button>
+    </section>
+
+    
+    <section class="product">
+      <h2>Wheat</h2>
+      <div class="product-images">
+        <img src="wheat.jpg" alt="Wheat grains" />
+      </div>
+      <p>Price: M650 per bag</p>
+      <button type="button">Contact Seller</button>
+    </section>
+
+   
+    <section class="product">
+      <h2>Peaches & Other Fruits</h2>
+      <div class="product-images">
+        <img src="fruits.jpg" alt="Basket of peaches and assorted fruits" />
+      </div>
+      <p>Price: From M30 per basket</p>
+      <button type="button">Contact Seller</button>
+    </section>
+
+  
+    <section class="product">
+      <h2>Goats</h2>
+      <div class="product-images">
+        <img src="goats.jpg" alt="Goats for sale" />
+      </div>
+      <p>Price: Negotiable (per goat)</p>
+      <button type="button">Contact Seller</button>
+    </section>
+
+    
+    <section class="product">
+      <h2>Sheep</h2>
+      <div class="product-images">
+        <img src="sheep.jpg" alt="Sheep for sale" />
+      </div>
+      <p>Price: Negotiable (per sheep)</p>
+      <button type="button">Contact Seller</button>
+    </section>
+
+    
+    <section class="product">
+      <h2>Cows</h2>
+      <div class="product-images">
+        <img src="download.jpg" alt="Cows for sale" />
+      </div>
+      <p>Price: Negotiable (per cow)</p>
+      <button type="button">Contact Seller</button>
+    </section>
+
+       <section class="product">
+      <h2>Chickens</h2>
+      <div class="product-images">
+        <img src="chickens.jpg" alt="Chickens for sale" />
+      </div>
+      <p>Price: M1200 per chicken</p>
+      <button type="button">Contact Seller</button>
+    </section>
+  </main>
+
+ 
+  <footer>
+    <p>Contact us: info@lesothohub.com | Phone: +266 5734 5678</p>
+    <p>Follow us on
+      <a href="https://facebook.com/lesothohub" target="_blank" rel="noopener">Facebook</a>,
+      <a href="https://twitter.com/lesothohub" target="_blank" rel="noopener">Twitter</a>, and
+      <a href="https://instagram.com/lesothohub" target="_blank" rel="noopener">Instagram</a>
+    </p>
+    <p>&copy; 2025 Lesotho Hub. All rights reserved.</p>
+  </footer>
+</body>
+</html>
